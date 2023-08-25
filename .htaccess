@@ -1,0 +1,6 @@
+# Turn rewrite engine on
+Options +FollowSymlinks
+RewriteEngine off
+
+# map neat URL to internal URL
+RewriteRule ^mobile/list/$   RestController.php?view=all&TABLE=mob [nc,qsa]
